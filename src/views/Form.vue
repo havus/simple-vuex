@@ -4,16 +4,19 @@
     <hr>
 
     <FormControl/>
+    <StatementBox/>
   </div>
 </template>
 
 <script>
 import FormControl from '@/components/FormControl.vue';
+import StatementBox from '@/components/StatementBox.vue';
 
 export default {
   name: 'Form',
   components: {
     FormControl,
+    StatementBox,
   },
 };
 </script>
@@ -22,5 +25,6 @@ export default {
   #form {
     padding: 50px;
     flex-grow: 1;
+    overflow: scroll;
   }
 </style>
